@@ -7,7 +7,6 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import mongodb from "../assets/mongodb.png"
 import nodejs from "../assets/node.png";
-import nextjs from "../assets/nextjs.png"; // New
 import { motion, useInView, useAnimation } from "framer-motion";
 
 const Experience = () => {
@@ -18,7 +17,7 @@ const Experience = () => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView,mainControls]);
 
   const techs = [
     {
@@ -93,7 +92,7 @@ const Experience = () => {
           {techs.map(({ id, src, title, style }) => (
             <motion.div
               variants={{
-                hidden: { opacity: 0, x: 100 },
+                hidden: { opacity: 0, x: 20 },
                 visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
