@@ -15,7 +15,7 @@ const Home = () => {
                </div>
                <div className=' flex justify-center mt-10'>
                 <a href="#about">
-                <img className='h-10 cursor-pointer my-3 animate-slidein700 opacity-0' src="https://cdn-icons-png.flaticon.com/128/1634/1634155.png" alt="" />
+                <img className='h-10 cursor-pointer my-3 animate-bounce delay-1000' src="https://cdn-icons-png.flaticon.com/128/1634/1634155.png" alt="" />
                 </a>
                </div>
             </div>
